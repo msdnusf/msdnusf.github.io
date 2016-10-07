@@ -131,8 +131,10 @@
 								<br>
 								<b>Input Format</b><br>
 								The first line contains N. The next line contains space separated N integers, and denote the array A. The third line contains two space separated integers denoting P and Q.
+								<br>
 								<b>Output Format</b><br>
 								In one line, print the required answer.
+								<br>
 								<b>Constraints</b><br>
 								1 ≤ N ≤ 102<br>
 								1 ≤ Ai ≤ 109<br>
@@ -156,6 +158,7 @@
 								<b>Balloon Problem</b><br>
 								Given <code>n</code> balloons, indexed from <code>0</code> to <code>n-1</code>. Each balloon is painted with a number on it represented by array <code>nums</code>. You are asked to burst all the balloons. If the you burst balloon <code>i</code> you will get <code>nums[left] * nums[i] * nums[right]</code> coins. Here <code>left</code> and <code>right</code> are adjacent indices of <code>i</code>. After the burst, the <code>left</code> and <code>right</code> then becomes adjacent.
 								Find the maximum coins you can collect by bursting the balloons wisely.<br>
+								<br>
 								Note:<br>
 								(1) You may imagine <code>nums[-1] = nums[n] = 1</code>. They are not real therefore you can not burst them.<br>
 								(2) 0 ≤ <code>n</code> ≤ 500, 0 ≤ <code>nums[i]</code> ≤ 100<br>
@@ -174,6 +177,7 @@
 								For example:<br>
 								Given binary tree <code>{1,#,2,3}</code>,<br>
 								<img src="images/hard7.png" alt="" />
+								<br>
 
 								return <code>[3,2,1]</code>.<br>
 								Note: Recursive solution is trivial, could you do it iteratively?
@@ -211,7 +215,50 @@
 
 							<p>
 								<a href="#" class="button special small">Hard 10</a><br>
-								Write a function that merges two sorted lists into a new sorted list
+								<b>Chef and Tower</b><br>
+								Chef holds all his secret recipes inside his house. For this reason, Chef wants to make his house secure. To do so, Chef wants to install guard towers in his house.
+								<br>
+Unfortunately, due to high costs, Chef can only activate 3 guard towers each night. Chef considers his housesafe if the triangle formed by these 3 guard towers as vertices strictly contains his house. Chef's house is located at (0, 0).
+<br>
+On the ith day, Chef plans to install a guard tower at location (xi, yi). Chef wants to know how effective each installation is. Specifically, after every installation, Chef wants to know the number of subsets of 3 guard towers he can activate so that his house becomes safe. Please help him answer this question!
+<br>
+This is an online problem, so you won't get the next point unless you answer the question first. Don't forget to flush the output after every print statement. Please see the note section for details about how to flush the standard output.!
+<br>
+<b>Input</b><br>
+The first line of input contains a single integer <b>N</b>. The next <b>N</b> lines describe the points.
+<br>
+The <b>i<sup>th</sup></b> line contains two integers <b>x<sub>i</sub></b> and <b>y<sub>i</sub></b> denoting the location of Chef's <b>i<sup>th</sup></b> guard tower, (<b>x<sub>i</sub></b>, <b>y<sub>i</sub></b>).
+Output
+Output N lines. The ith line must contain a single integer, the answer to Chef's question after the ithinstallation.
+Constraints
+|xi|, |yi| ≤ 106
+The points are distinct.
+(xi, yi) ≠ (0, 0)
+Subtasks
+Subtask #1: (11 points) 3 ≤ N ≤ 1000
+Subtask #2: (24 points) 3 ≤ N ≤ 12000
+Subtask #3: (65 points) 3 ≤ N ≤ 400000
+Example
+Input:
+6
+2 3
+3 2
+-1 -1
+3 3
+4 1
+5 5
+Output:
+0
+0
+1
+1
+2
+2
+Explanation
+After the first and second installations, there aren't enough guard towers for Chef to choose from.
+After the third and fourth installations, there is one set of guard towers that make Chef's house safe:{(2, 3), (3, 2), (-1, -1)}.
+After the fifth and sixth installations, there are two sets of guard towers that make Chef's house safe:{(2, 3), (3, 2), (-1, -1)} and {(2, 3), (4, 1), (-1, -1)}.
+
 								<br>
 							</p>
 							<hr />
