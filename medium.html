@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Easy Questions</title>
+		<title>Medium Questions</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -52,35 +52,66 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Easy Questions</h1>
+							<h1>Medium Questions</h1>
 							<!--
 							<span class="image main"><img src="images/rules-1.png" alt="" /></span>
 						-->
 <!-- 1 -->
 							<hr />
 							<p>
-								<a href="#" class="button special small">Easy 1</a><br>
-								Given two non-negative int values, return true if they have the same last digit, such as with 27 and 57. Note that the % "mod" operator computes remainders, so 17 % 10 is 7.<br>
-								Ex.<br>
-								<code>lastDigit(7, 17) → true</code><br>
-								<code>lastDigit(6, 17) → false</code><br>
-								<code>lastDigit(3, 113) → true</code>
-							</p>
-							<hr />
-
-							<p>
-								<a href="#" class="button special small">Easy 2</a><br>
-								Given a string, return a new string where "not " has been added to the front. However, if the string already begins with "not", return the string unchanged. Note: use .equals() to compare 2 strings.
+								<a href="#" class="button special small">Medium 1</a><br>
+								Invert a binary tree.
 								<br>
-								Ex.<br>
-								<code>notString("candy") → "not candy"</code><br>
-								<code>notString("x") → "not x"</code><br>
-								<code>notString("not bad") → "not bad"</code>
+								<img src="images/medium1.png" alt="" />
 							</p>
 							<hr />
 
 							<p>
-								<a href="#" class="button special small">Easy 3</a><br>
+								<a href="#" class="button special small">Medium 2</a><br>
+								<b>Counting Games<b><br>
+									Henry and Derek are waiting in a room. They have successfully qualified for the Snackdown Finals 2016, and decide to pass the time by playing a new game.<br>
+	Before the game starts, they select N numbers: v(0), v(1), ..., v(N-1). These numbers will stay fixed throughout the game.<br>
+	The initial state of the game consists of K integers x1, x2, ..., xK, each of which is in the range [0, N-1]. Thus, there are NK distinct states all in all. Then the players take turns, starting with Henry. In a turn, a player selects one of the integers, say xi, and decreases it by some positive multiple of 2v(xi). However, this is only valid if the resulting number is nonnegative. A player loses if there are no more valid moves left.<br>
+	Henry and Derek have gotten really good at playing this game, so much that they have figured out the optimal strategy, and they always play optimally! This made the game really boring for them, because the winner is solely determined by the initial state of the game. So instead of playing the game, they decided to just answer the following question instead:<br>
+	Of all the NK possible initial states, how many of them result in a win for Henry?<br>
+								<b>Input<b><br>
+									The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.<br>
+The first line of each test case contains two integers, N and K.<br>
+The second line contains N space-separated integers v(0), v(1), ..., v(N-1).
+	<b>Output<b><br>
+	The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.<br>
+The first line of each test case contains two integers, N and K.<br>
+The second line contains N space-separated integers v(0), v(1), ..., v(N-1).<br>
+
+For each test case, output a single line containing a single integer, the number of initial states that result in a win for Henry. This number can be very large, so output it modulo 109 + 7.
+<br>
+<b>Constraints<b><br>
+<ul>
+	<li>1 ≤ T ≤ 3</li>
+	<li>1 ≤ K ≤ 106</li>
+	<li>1 ≤ N ≤ 105</li>
+	<li>0 ≤ v(i) ≤ 104</li>
+<ul>
+<b>Example<b><br>
+Input:<br>
+3<br>
+2 3<br>
+1 0<br>
+5 3<br>
+2 0 1 0 0<br>
+5 3<br>
+2 0 1 0 1<br>
+
+Output:<br>
+4<br>
+94<br>
+100<br>
+
+							</p>
+							<hr />
+
+							<p>
+								<a href="#" class="button special small">Medium 3</a><br>
 								Given a non-empty string and an int N, return the string made starting with char 0, and then every Nth char of the string. So if N is 3, use char 0, 3, 6, ... and so on. N is 1 or more.
 								<br>
 								Ex.<br>
@@ -91,7 +122,7 @@
 							<hr />
 
 							<p>
-								<a href="#" class="button special small">Easy 4</a><br>
+								<a href="#" class="button special small">Medium 4</a><br>
 								Given 2 int values, return true if one is negative and one is positive. Except if the parameter "negative" is true, then return true only if both are negative.
 								<br>
 								Ex.<br>
@@ -102,14 +133,14 @@
 							<hr />
 
 							<p>
-								<a href="#" class="button special small">Easy 5</a><br>
+								<a href="#" class="button special small">Medium 5</a><br>
 								Given an array of integers, every element appears twice except for one. Find that single one. Note:Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
 							</p>
 							<hr />
 
 							<hr />
 							<p>
-								<a href="#" class="button special small">Easy 6</a><br>
+								<a href="#" class="button special small">Medium 6</a><br>
 								Write a function that takes a string as input and returns the string reversed.
 								<br>
 								Ex.<br>
@@ -118,7 +149,7 @@
 							<hr />
 
 							<p>
-								<a href="#" class="button special small">Easy 7</a><br>
+								<a href="#" class="button special small">Medium 7</a><br>
 								Given an integer (signed 32 bits), write a function to check whether it is a power of 4.
 								<br>
 								Ex.<br>
@@ -127,7 +158,7 @@
 							<hr />
 
 							<p>
-								<a href="#" class="button special small">Easy 8</a><br>
+								<a href="#" class="button special small">Medium 8</a><br>
 								Write a function that takes a list of strings an prints them, one per line, in a rectangular frame. For example the list ["Hello", "World", "in", "a", "frame"] gets printed as:
 								<br>
 								<code>*********</code><br>
@@ -141,7 +172,7 @@
 							<hr />
 
 							<p>
-								<a href="#" class="button special small">Easy 9</a><br>
+								<a href="#" class="button special small">Medium 9</a><br>
 								Write a function that computes the list of the first 100 Fibonacci numbers.
 								<br>
 								Ex.<br>
@@ -150,21 +181,21 @@
 							<hr />
 
 							<p>
-								<a href="#" class="button special small">Easy 10</a><br>
+								<a href="#" class="button special small">Medium 10</a><br>
 								Write a function that merges two sorted lists into a new sorted list
 								<br>
 							</p>
 							<hr />
 
 							<p>
-								<a href="#" class="button special small">Easy 11</a><br>
+								<a href="#" class="button special small">Medium 11</a><br>
 								Write a function that returns the elements on odd positions in a list
 								<br>
 							</p>
 							<hr />
 
 							<p>
-								<a href="#" class="button special small">Easy 12</a><br>
+								<a href="#" class="button special small">Medium 12</a><br>
 								Given an int array, return a new array with double the length where its last element is the
 								same as the original array, and all the other elements are 0. The original array will be length 1 or more. Note: by default, a new int array contains all 0's.
 								<br>
@@ -176,7 +207,7 @@
 							<hr />
 
 							<p>
-								<a href="#" class="button special small">Easy 13</a><br>
+								<a href="#" class="button special small">Medium 13</a><br>
 								Given three ints, a b c, return true if two or more of them have the same rightmost digit. The ints are non-negative. Note: the % "mod" operator computes the remainder, e.g. 17 % 10 is 7.
 								<br>
 								Ex.<br>
