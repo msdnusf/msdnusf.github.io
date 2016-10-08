@@ -260,7 +260,7 @@ Output <b>N</b> lines. The <b>i<sup>th</sup></b> line must contain a single inte
 1<br>
 2<br>
 2<br>
-Explanation</b><br>
+<b>Explanation</b><br>
 <ul>
 <li>After the first and second installations, there aren't enough guard towers for Chef to choose from.</li>
 <li>After the third and fourth installations, there is one set of guard towers that make Chef's house safe:<b>{(2, 3), (3, 2), (-1, -1)}.</b></li>
@@ -273,7 +273,57 @@ Explanation</b><br>
 
 							<p>
 								<a href="#" class="button special small">Hard 11</a><br>
-								Write a function that returns the elements on odd positions in a list
+								<b>Stringology is Magic</b><br>
+								You have been given a string <b>T</b> with <b>n</b> lowercase letters <b>T[1..n]</b>. For each substrings <b>T[l..r]</b>, we can assign them two values, <b>k1</b> and <b>k2</b>, which are defined as following.
+<ul>
+<li><b>k1</b> is the number of different substrings which are lexicographically smaller than <b>T[l..r]</b>. There are <b>(n + 1) * n / 2</b> substrings in total.</li>
+<li><b>k2</b> indicates the number of substrings which are as same as <b>T[l..r]</b> but have smaller left subscript than <b>l</b>.</li>
+</ul>
+In this problem, you need to answer the following two queries:
+<br>
+<ul>
+<li>Select <b>k1 k2</b>: report l and r, such that <b>T[l..r]</b> are assigned values <b>k1</b> and <b>k2</b>.</li>
+<li>Rank <b>l r</b>: output the assigned <b>k1</b> and <b>k2</b> of <b>T[l..r]</b>.</li>
+</ul>
+<br>
+<b>Input</b><br>
+The first line contains a string <b>T</b> with <b>n</b> letters . The second line contains a number <b>m</b>, which represents for the totally number of queries.
+<br>
+Each of the following <b>m</b> lines contains a query. All queries are formed as "Select <b>k1 k2</b>" or "Rank <b>l r</b>".
+<br>
+
+<b>Output</b><br>
+For each query, output the corresponding answer as the form <b>"l r"</b> or <b>"k1 k2"</b> in a single line.
+<br>
+<b>Constraints</b><br>
+<ul>
+<li>1 <= n <= 10^6</li>
+<li>1 <= m <= 10^6</li>
+<li>1 <= l <= r <= n</li>
+<li>k1, k2 are legal</li>
+.
+</ul>
+<br>
+<b>Example</b><br>
+<b>Input:</b><br>
+aa<br>
+6<br>
+Select 1 1<br>
+Select 1 2<br>
+Select 2 1<br>
+Rank 1 1<br>
+Rank 2 2<br>
+Rank 1 2<br>
+
+<b>Output:</b><br>
+1 1<br>
+2 2<br>
+1 2<br>
+1 1<br>
+1 2<br>
+2 1<br>
+
+
 								<br>
 							</p>
 							<hr />
