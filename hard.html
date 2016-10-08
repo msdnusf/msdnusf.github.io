@@ -330,24 +330,74 @@ Rank 1 2<br>
 
 							<p>
 								<a href="#" class="button special small">Hard 12</a><br>
-								Given an int array, return a new array with double the length where its last element is the
-								same as the original array, and all the other elements are 0. The original array will be length 1 or more. Note: by default, a new int array contains all 0's.
+								<b>Wait For It</b><br>
+								Given <b>N, A and B</b>, find the value of the following expression:
 								<br>
-								Ex.<br>
-								<code>makeLast([4, 5, 6]) → [0, 0, 0, 0, 0, 6]</code><br>
-								<code>makeLast([1, 2]) → [0, 0, 0, 2]</code><br>
-								<code>makeLast([3]) → [0, 3]</code>
+								<img src="images/hard12.png" alt="" /><br>
+								Since the value can be large, find it <b>modulo (10<sup>9</sup>+7)</b>.
+								<br>
+								<b>Input</b><br>
+								<ul>
+<li>The first line of the input contains an integer <b>T</b> denoting the number of test cases. The description of <b>T</b> test cases follows.</li>
+<li>Each test case consists of a single line containing three space-separated integers — <b>A, B, and N</b>.</li>
+</ul>
+<b>Output</b><br>
+<ul>
+<li>For each test case, output a single line containing the value of the expression <b>modulo (10<sup>9</sup>+7)</b>.<li>
+<ul>
+<b>Constraints</b><br>
+<ul>
+<li><b>1 ≤ T ≤ 20</b></li>
+<li><b>1 ≤ N ≤ 109</b></li>
+<li><b>1 ≤ B < A ≤ 109</b></li>
+<li><b>GCD(A,B) = 1, i.e., A and B are coprime.</b></li>
+</ul>
+<b>Example</b><br>
+<b>Input:</b><br>
+2<br>
+3 2 2<br>
+2 1 2<br>
+
+<b>Output:</b><br>
+8<br>
+6<br>
+
+<b>Explanation</b><br>
+<b>Example case 1.</b> The summation expands to gcd(1,1) + gcd(5,1) + gcd(1,5) + gcd(5,5) = 8.
+<br>
+<b>Example case 2.</b> The summation expands to gcd(1,1) + gcd(3,1) + gcd(1,3) + gcd(3,3) = 6.
+<br>
+
 							</p>
 							<hr />
 
 							<p>
 								<a href="#" class="button special small">Hard 13</a><br>
-								Given three ints, a b c, return true if two or more of them have the same rightmost digit. The ints are non-negative. Note: the % "mod" operator computes the remainder, e.g. 17 % 10 is 7.
-								<br>
-								Ex.<br>
-								<code>lastDigit(23, 19, 13) → true</code><br>
-								<code>lastDigit(23, 19, 12) → false</code><br>
-								<code>lastDigit(23, 19, 3) → true</code>
+								<b>Products of Digits</b><br>
+								Chef has called on you many times in the past to solve unusual tasks that seem irrelevant to cooking, and today is no different. Today Chef demands that you find integers whose product of digits is equal to a given integer, but in bases besides 10. Given a string S, you are to determine the smallest positive integer I such that there exists a base B>1 for which the product of the digits of I gives the integer represented by S. For example, if S="11", then the smallest I is 8, because the base 3 representation of I is 22, and in base 3 2*2=11.
+<br>
+Formally, your task is this: find the smallest integer I such that there exists an integer B>1 and integers A<sub>i</sub> for which:
+<br>
+			<img src="images/hard13.png" alt="" /><br>
+<b>Input</b><br>
+Input begins with an integer T, the number of test cases (at most 50). Each test case consists of a single line containing a string S comprised of 0-9 and A-Z characters. Characters A-Z represent the decimal values 10-35, respectively. S will have between 1 and 4 characters, and the first character will not be 0.
+<b>Output</b><br>
+For each test case, output a single integer on a line, giving the minimum value of I (printed in decimal). It is guaranteed that I will fit in a 64-bit integer.
+<br>
+<b>Sample Input</b><br>
+4<br>
+9<br>
+11<br>
+7Q2<br>
+PIES<br>
+<br>
+<br>
+<b>Sample Output</b><br>
+9<br>
+8<br>
+15227<br>
+7845414<br>
+
 							</p>
 
 						</div>
